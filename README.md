@@ -3,7 +3,8 @@ imaGenius-for-WordPress
 
 The plugin allows you to add a frame, a filter or an animation effect to any image, even external to WP, by inserting the link in between two tags.
 
-== Description ==
+Description
+=======================
 
 The short-code consists of three main parts:
 
@@ -23,7 +24,8 @@ The short-code consists of three main parts:
 
 [WordPress Italian Google Plus Community](https://plus.google.com/communities/109254048492234113886)
 
-== Installation ==
+Installation
+=======================
 
 1. Upload imaGenius folder to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
@@ -33,7 +35,8 @@ The short-code consists of three main parts:
 
 **Read the documentation:** [English version](https://docs.google.com/file/d/0BwWjGErK0rRIbzBMcmdZRzNnTVE/edit?usp=sharing) - [Italian version](https://docs.google.com/document/d/1FynGAcac_d3qFkEfbDU4cieszbB9yP35JTngHfSZ7QQ/edit?usp=sharing) 
 
-== Frequently asked questions ==
+Frequently asked questions
+=======================
 
 *Q: Can I use my own texture with this plugin?*
 
@@ -54,7 +57,8 @@ As you learned from [documentation](https://docs.google.com/file/d/0BwWjGErK0rRI
 If you install the plugin in the Network DON'T ACTIVATE IT DIRECTLY FROM THERE. Go in every single's site administration panel and activate the plugin from there.
 
 
-== Changelog ==
+Changelog
+=======================
 
 1.1 - All CSS and Textures fixed
 
