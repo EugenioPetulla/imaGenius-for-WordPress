@@ -14,7 +14,7 @@ The short-code consists of three main parts:
 • Effect/ Animation
 
 
-**Instance:** [imagenius size="300" link="http://www.wordpress.org" filter=”saturated” effect="zoom"]imagelink.jpg[/imagenius]
+**Instance:** `[imagenius size="300" link="http://www.wordpress.org" filter=”saturated” effect="zoom"]imagelink.jpg[/imagenius]`
 
 
 [English documentation here](https://docs.google.com/file/d/0BwWjGErK0rRIbzBMcmdZRzNnTVE/edit?usp=sharing)
@@ -35,13 +35,13 @@ The short-code consists of three main parts:
 
 == Frequently asked questions ==
 
-= Can I use my own texture with this plugin? =
+*Q: Can I use my own texture with this plugin?*
 
-Easy peasy! I encourage you to experiment and modify every single part of the frames, so you can put your texture in the `/wp-content/plugins/imagenius/images/` folder; name it as you want, but remember that only .png files are accepted, your image must end with this extension. Now you can put the name of your texture in the `texture=""` parameter of [framegenius] shortcode and look at the fancy result!
+Easy peasy! I encourage you to experiment and modify every single part of the frames, so you can put your texture in the `/wp-content/plugins/imagenius/images/` folder; name it as you want, but remember that only .png files are accepted, your image must end with this extension. Now you can put the name of your texture in the `texture=""` parameter of `[framegenius]` shortcode and look at the fancy result!
 
-**Instance:**[framegenius texture="my-fancy-texture"]imagelink.jpg[/framegenius]
+**Instance:** `[framegenius texture="my-fancy-texture"]imagelink.jpg[/framegenius]`
 
-= Can I set different default values, size value for example? =
+*Q: Can I set different default values, size value for example?*
 
 As you learned from [documentation](https://docs.google.com/file/d/0BwWjGErK0rRIbzBMcmdZRzNnTVE/edit?usp=sharing), default size value is setted to 225px, find 225 number in the imaGenius.php file and change it as you want. In this way, if you know what size fits well in your site, you'll be able to recall the function without specify the size value! Same process for effects, filters and textures.
 
@@ -49,23 +49,9 @@ As you learned from [documentation](https://docs.google.com/file/d/0BwWjGErK0rRI
 
 **EVEN MORE IMPORTANT:** This kind of modding, at moment, refresh every time the plugin will be updated. Be patient, soon I will be able to store all your modifications, I'm working on this way! :)
 
-= I've installed and activated the plugin in a Multisite WordPress installation, but I'm not able to see it in the single's site administration, why? =
+*Q: I've installed and activated the plugin in a Multisite WordPress installation, but I'm not able to see it in the single's site administration, why?*
 
 If you install the plugin in the Network DON'T ACTIVATE IT DIRECTLY FROM THERE. Go in every single's site administration panel and activate the plugin from there.
-
-== Screenshots ==
-
-1. An example using `[imagenius]` shortcode
-
-2. An animated example using `[polagenius]` shortcode
-
-3. An example using `[roundpolagenius]` shortcode
-
-4. A fancy animated gallery obtained via `[framegenius]` shortcode
-
-5. Another animated gallery obtained via `[framegenius]` shortcode
-
-6. An animated gallery obtained via `[framegenius]` shortcode
 
 
 == Changelog ==
@@ -76,8 +62,8 @@ If you install the plugin in the Network DON'T ACTIVATE IT DIRECTLY FROM THERE. 
 
 1.3 - Path issues fixed
 
-1.4 - [framegenius] texture path issues fixed
+1.4 - `[framegenius]` texture path issues fixed
 
-1.5 - Autolocate /images/ path for better texture usage
+1.5 - Autolocate `/images/` path for better texture usage
 
 1.6 - Corrected Enqueue errors
