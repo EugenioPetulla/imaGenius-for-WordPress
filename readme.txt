@@ -1,5 +1,11 @@
-imaGenius-for-WordPress
-=======================
+=== imaGenius ===
+Contributors: iGenius 
+Tags: images, filters, frames, animations
+Requires at least: 2.8
+Tested up to: 3.6
+Stable tag: 1.6
+License: GPLv3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.txt
 
 The plugin allows you to add a frame, a filter or an animation effect to any image, even external to WP, by inserting the link in between two tags.
 
@@ -81,3 +87,5 @@ If you install the plugin in the Network DON'T ACTIVATE IT DIRECTLY FROM THERE. 
 1.5 - Autolocate /images/ path for better texture usage
 
 1.6 - Corrected Enqueue errors
+
+== Upgrade notice ==

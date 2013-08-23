@@ -1,0 +1,284 @@
+/*SEZIONE STILI*/
+	.bw img {
+		filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+		filter: grayscale(100%);
+		-webkit-filter: grayscale(100%);
+		-moz-filter: grayscale(100%);
+		-o-filter: grayscale(100%);
+		-ms-filter: grayscale(100%);
+}
+	.inverted img {
+		filter: invert(100%);
+		-webkit-filter: invert(100%);
+		-moz-filter: invert(100%);
+		-o-filter: invert(100%);
+		-ms-filter: invert(100%);
+}
+	.desaturated img {
+		filter: saturate(50%);
+		-webkit-filter: saturate(50%);
+		-moz-filter: saturate(50%);
+		-o-filter: saturate(50%);
+		-ms-filter: saturate(50%);
+}
+	.saturated img {
+		filter: saturate(50%);
+		-webkit-filter: saturate(200%);
+		-moz-filter: saturate(200%);
+		-o-filter: saturate(200%);
+		-ms-filter: saturate(200%);
+}
+	.huerot img {
+		filter: hue-rotate(45deg);
+		-webkit-filter: hue-rotate(90deg);
+		-moz-filter: hue-rotate(90deg);
+		-o-filter: hue-rotate(90deg);
+		-ms-filter: hue-rotate(90deg);
+}
+	.contrasted img {
+		filter: contrast(200%);
+		-webkit-filter: contrast(200%);
+		-moz-filter: contrast(200%);
+		-o-filter: contrast(200%);
+		-ms-filter: contrast(200%);
+}
+	.bright img {
+		filter: brightness(0.3);
+		-webkit-filter: brightness(0.3);
+		-moz-filter: brightness(0.3);
+		-o-filter: brightness(0.3);
+		-ms-filter: brightness(0.3);
+}
+	.sepia img {
+		filter: sepia(80%);
+		-webkit-filter: sepia(80%);
+		-moz-filter: sepia(80%);
+		-o-filter: sepia(80%);
+		-ms-filter: sepia(80%);
+}
+/*SEZIONE EFFETTI*/
+
+	.imgzoom img:hover {
+		-webkit-transition: all 0.7s ease-in-out;     
+		-moz-transition: all 0.7s ease-in-out;     
+		-o-transition: all 0.7s ease-in-out;
+		-ms-transition: all 0.7s ease-in-out;
+        transition: all 0.7s ease-in-out;
+		transform:scale(1.5);
+        -ms-transform:scale(1.5);
+        -moz-transform:scale(1.5); 
+        -webkit-transform:scale(1.5); 
+        -o-transform:scale(1.5);
+}
+	.rotate:hover {
+		transform:rotate(15deg);
+        -ms-transform:rotate(15deg);
+        -moz-transform:rotate(15deg); 
+        -webkit-transform:rotate(15deg); 
+        -o-transform:rotate(15deg);
+}
+	.zoom:hover {
+		transform:scale(1.5);
+        -ms-transform:scale(1.5);
+        -moz-transform:scale(1.5); 
+        -webkit-transform:scale(1.5); 
+        -o-transform:scale(1.5);
+}
+	.skew:hover {
+		transform:skew(0deg,10deg);
+        -ms-transform:skew(0deg,10deg);
+        -moz-transform:skew(0deg,10deg); 
+        -webkit-transform:skew(0deg,10deg); 
+        -o-transform:skew(0deg,10deg);
+}
+	.bounce:hover {
+		transform:translate(0px,10px);
+        -ms-transform:translate(0px,10px);
+        -moz-transform:translate(0px,10px); 
+        -webkit-transform:translate(0px,10px); 
+        -o-transform:translate(0px,10px);
+        -webkit-transition: all 0.5s ease-in-out;     
+		-moz-transition: all 0.5s ease-in-out;     
+		-o-transition: all 0.5s ease-in-out;
+		-ms-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+}
+	.skewbounce:hover, .bounceskew:hover {
+		transform:skew(0deg,10deg) translate(0px,10px);
+        -ms-transform:skew(0deg,10deg) translate(0px,10px);
+        -moz-transform:skew(0deg,10deg) translate(0px,10px); 
+        -webkit-transform:skew(0deg,10deg) translate(0px,10px); 
+        -o-transform:skew(0deg,10deg) translate(0px,10px);
+}
+	.skewzoom:hover, .zoomskew:hover {
+		transform:skew(0deg,10deg) scale(1.5);
+        -ms-transform:skew(0deg,10deg) scale(1.5);
+        -moz-transform:skew(0deg,10deg) scale(1.5); 
+        -webkit-transform:skew(0deg,10deg) scale(1.5); 
+        -o-transform:skew(0deg,10deg) scale(1.5);
+}
+	.bouncezoom:hover, .zoombounce:hover {
+		transform:translate(0px,10px) scale(1.5);
+        -ms-transform:translate(0px,10px) scale(1.5);
+        -moz-transform:translate(0px,10px) scale(1.5); 
+        -webkit-transform:translate(0px,10px) scale(1.5); 
+        -o-transform:translate(0px,10px) scale(1.5);
+}
+	.skewrotate:hover, .rotateskew:hover {
+		transform:skew(0deg,10deg) rotate(15deg);
+        -ms-transform:skew(0deg,10deg) rotate(15deg);
+        -moz-transform:skew(0deg,10deg) rotate(15deg); 
+        -webkit-transform:skew(0deg,10deg) rotate(15deg); 
+        -o-transform:skew(0deg,10deg) rotate(15deg);
+}
+	.bouncerotate:hover, .rotatebounce:hover {
+		transform:translate(0px,10px) rotate(15deg);
+        -ms-transform:translate(0px,10px) rotate(15deg);
+        -moz-transform:translate(0px,10px) rotate(15deg); 
+        -webkit-transform:translate(0px,10px) rotate(15deg); 
+        -o-transform:translate(0px,10px) rotate(15deg);
+}
+	.zoomrotate:hover, .rotatezoom:hover {
+		transform:scale(1.5) rotate(15deg);
+        -ms-transform:scale(1.5) rotate(15deg);
+        -moz-transform:scale(1.5) rotate(15deg); 
+        -webkit-transform:scale(1.5) rotate(15deg); 
+        -o-transform:scale(1.5) rotate(15deg);
+}
+	.skewrotatezoom:hover, .rotateskewzoom:hover, .zoomrotateskew:hover, .zoomskewrotate:hover, .skewzoomrotate:hover, .rotatezoomskew:hover {
+		transform:skew(0deg,10deg) rotate(15deg) scale(1.5);
+        -ms-transform:skew(0deg,10deg) rotate(15deg) scale(1.5);
+        -moz-transform:skew(0deg,10deg) rotate(15deg) scale(1.5); 
+        -webkit-transform:skew(0deg,10deg) rotate(15deg) scale(1.5); 
+        -o-transform:skew(0deg,10deg) rotate(15deg) scale(1.5);
+}
+	.bouncerotatezoom:hover, .rotatebouncezoom:hover, .zoomrotatebounce:hover, .zoombouncerotate:hover, .bouncezoomrotate:hover, .rotatezoombounce:hover {
+		transform:translate(0px,10px) rotate(15deg) scale(1.5);
+        -ms-transform:translate(0px,10px) rotate(15deg) scale(1.5);
+        -moz-transform:translate(0px,10px) rotate(15deg) scale(1.5); 
+        -webkit-transform:translate(0px,10px) rotate(15deg) scale(1.5); 
+        -o-transform:translate(0px,10px) rotate(15deg) scale(1.5);
+}
+	.skewbouncezoom:hover, .bounceskewzoom:hover, .zoombounceskew:hover, .zoomskewbounce:hover, .skewzoombounce:hover, .bouncezoomskew:hover {
+		transform:skew(0deg,10deg) translate(0px,10px) scale(1.5);
+        -ms-transform:skew(0deg,10deg) translate(0px,10px) scale(1.5);
+        -moz-transform:skew(0deg,10deg) translate(0px,10px) scale(1.5); 
+        -webkit-transform:skew(0deg,10deg) translate(0px,10px) scale(1.5); 
+        -o-transform:skew(0deg,10deg) translate(0px,10px) scale(1.5);
+}
+	.skewrotatebounce:hover, .rotateskewbounce:hover, .bouncerotateskew:hover, .bounceskewrotate:hover, .skewbouncerotate:hover, .rotatebounceskew:hover {
+		transform:skew(0deg,10deg) rotate(15deg) translate(0px,10px);
+        -ms-transform:skew(0deg,10deg) rotate(15deg) translate(0px,10px);
+        -moz-transform:skew(0deg,10deg) rotate(15deg) translate(0px,10px); 
+        -webkit-transform:skew(0deg,10deg) rotate(15deg) translate(0px,10px); 
+        -o-transform:skew(0deg,10deg) rotate(15deg) translate(0px,10px);
+}
+	.bounceskewrotatezoom:hover, .bouncerotateskewzoom:hover, .bouncezoomrotateskew:hover, .bouncezoomskewrotate:hover, .bounceskewzoomrotate:hover, .bouncerotatezoomskew:hover, .skewrotatezoombounce:hover, .rotateskewzoombounce:hover, .zoomrotateskewbounce:hover, .zoomskewrotatebounce:hover, .skewzoomrotatebounce:hover, .rotatezoomskewbounce:hover, .skewbouncerotatezoom:hover, .rotatebounceskewzoom:hover, .zoombouncerotateskew:hover, .zoombounceskewrotate:hover, .skewbouncezoomrotate:hover, .rotatebouncezoomskew:hover, .skewrotatebouncezoom:hover, .rotateskewbouncezoom:hover, .zoomrotatebounceskew:hover, .zoomskewbouncerotate:hover, .skewzoombouncerotate:hover, .rotatezoombounceskew:hover {
+		transform:skew(0deg,10deg) rotate(15deg) scale(1.5) translate(0px,10px);
+        -ms-transform:skew(0deg,10deg) rotate(15deg) scale(1.5) translate(0px,10px);
+        -moz-transform:skew(0deg,10deg) rotate(15deg) scale(1.5) translate(0px,10px); 
+        -webkit-transform:skew(0deg,10deg) rotate(15deg) scale(1.5) translate(0px,10px);
+        -o-transform:skew(0deg,10deg) rotate(15deg) scale(1.5) translate(0px,10px);
+}
+/*CONTENITORI DELLE IMMAGINI*/
+
+	.pola_canv {
+        margin-right: 30px;
+        margin-bottom: 30px;
+        padding: 10px 10px 50px 10px;;
+        background-color: #fff;
+        border: 1px solid #B9B5B5;
+        float: left;
+        position: relative;
+        overflow: hidden;
+        -webkit-box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2);     
+        -webkit-transition: all 0.7s ease-in-out;     
+		-moz-transition: all 0.7s ease-in-out;     
+		-o-transition: all 0.7s ease-in-out;
+		-ms-transition: all 0.7s ease-in-out;
+        transition: all 0.7s ease-in-out;
+    }
+    .pola_canv img {
+		border: 1px solid #B9B5B5;
+	}
+	.pola_canv p {  
+		position: absolute;  
+		text-align: center;
+        width: 100%;
+		bottom: -10px;
+		left: 0px;
+		font-weight: bold;
+		font-size: 12px;
+		text-transform: uppercase;
+	}
+	.imagenius {
+		border: 10px solid #fff;  
+		float: left;
+		margin: 20px;
+		overflow: hidden;
+		-webkit-box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2);
+        -webkit-transition: all 0.7s ease-in-out;     
+		-moz-transition: all 0.7s ease-in-out;     
+		-o-transition: all 0.7s ease-in-out;
+		-ms-transition: all 0.7s ease-in-out;
+        transition: all 0.7s ease-in-out;
+}
+	.roundpola {
+        margin-right: 30px;
+        margin-bottom: 30px;
+        padding: 10px 10px 50px 10px;;
+        background-color: #fff;
+        border: 1px solid #B9B5B5;
+        -moz-border-radius: 20px;
+		border-radius: 20px;
+        float: left;
+        position: relative;
+        overflow: hidden;
+        -webkit-box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2);     
+        -webkit-transition: all 0.7s ease-in-out;     
+		-moz-transition: all 0.7s ease-in-out;     
+		-o-transition: all 0.7s ease-in-out;
+		-ms-transition: all 0.7s ease-in-out;
+        transition: all 0.7s ease-in-out;
+    }
+    .roundpola img {
+		border: 1px solid #B9B5B5;		
+	}
+	.roundpola p {  
+		position: absolute;  
+		text-align: center;
+        width: 100%;
+		bottom: -10px;
+		left: 0px;
+		font-weight: bold;
+		font-size: 12px;
+		text-transform: uppercase;
+}
+	.framegenius {
+		border: 10px solid #E5E5E5; 
+		float: left;
+		margin: 20px;
+		overflow: hidden;
+		-webkit-box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.4);
+        -moz-box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.4);
+        box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.4);
+        -webkit-transition: all 0.7s ease-in-out;     
+		-moz-transition: all 0.7s ease-in-out;     
+		-o-transition: all 0.7s ease-in-out;
+		-ms-transition: all 0.7s ease-in-out;
+        transition: all 0.7s ease-in-out;
+}
+	.framegeniusborder {
+		-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+		border: 5px solid #E5E5E5;
+		margin: 25px 25px 25px 25px;
+		overflow: hidden;
+}
