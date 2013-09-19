@@ -41,7 +41,7 @@ function polaroid_shortcode( $atts, $content = null ){
       $imagesize = $size - 10;
  
       return ' 
-      <div class="pola_canv ' .$filter . ' ' . $effect . '" max-width=' . $size . 'px"><a href="' . $link . '"><img src="' . $content . '" width="' . $imagesize . 'px"></a><p>' .$title. '</p></div>';
+      <div class="pola_canv ' .$filter . ' ' . $effect . '" max-width=' . $size . 'px" itemscope itemtype="http://schema.org/ImageObject"><a href="' . $link . '" itemprop="url"><img src="' . $content . '" width="' . $imagesize . 'px" itemprop="contentURL"></a><p itemprop="name">' .$title. '</p><meta itemprop="width" content="' . $imagesize . 'px"></div>';
  
 }
 function roundpola_shortcode( $atts, $content = null ){
@@ -56,7 +56,7 @@ function roundpola_shortcode( $atts, $content = null ){
       $imagesize = $size - 10;
  
       return ' 
-      <div class="roundpola ' .$filter . ' ' . $effect . '" max-width=' . $size . 'px"><a href="' . $link . '"><img src="' . $content . '" width="' . $imagesize . 'px"></a><p>' .$title. '</p></div>';
+      <div class="roundpola ' .$filter . ' ' . $effect . '" max-width=' . $size . 'px" itemscope itemtype="http://schema.org/ImageObject"><a href="' . $link . '" itemprop="url"><img src="' . $content . '" width="' . $imagesize . 'px" itemprop="contentURL"></a><p itemprop="name">' .$title. '</p><meta itemprop="width" content="' . $imagesize . 'px"></div>';
  
 }
 function imagenius_shortcode( $atts, $content = null ){
@@ -68,7 +68,7 @@ function imagenius_shortcode( $atts, $content = null ){
       ), $atts ) );
       
       return '
-      <div class="imagenius ' . $filter . ' ' . $effect . '"><a href="' . $link . '"><img src="' . $content . '" width="' . $size . 'px"></a></div>';
+      <div class="imagenius ' . $filter . ' ' . $effect . '" itemscope itemtype="http://schema.org/ImageObject"><a href="' . $link . '" itemprop="url"><img src="' . $content . '" width="' . $size . 'px" itemprop="contentURL"></a><meta itemprop="width" content="' . $size . 'px"><meta itemprop="name" content="' .$title. '"></div>';
 }
 function framegenius_shortcode( $atts, $content = null ){
     extract( shortcode_atts( array(
@@ -82,7 +82,7 @@ function framegenius_shortcode( $atts, $content = null ){
       $file = dirname(__FILE__) . '/imaGenius.php';
       
       return '
-      <div class="framegenius ' . $filter . ' ' . $effect . '"; style="background-image:url(' . plugin_dir_url($file) . 'images/' . $texture . '.png)"><a href="' . $link . '"><div class="framegeniusborder"><img src="' . $content . '" width="' . $size . 'px"></div></a></div>';
+      <div class="framegenius ' . $filter . ' ' . $effect . '"; style="background-image:url(' . plugin_dir_url($file) . 'images/' . $texture . '.png)" itemscope itemtype="http://schema.org/ImageObject"><a href="' . $link . '" itemprop="url"><span class="framegeniusborder"><img src="' . $content . '" width="' . $size . 'px" itemprop="contentURL"></span></a><meta itemprop="width" content="' .$title. '"></div>';
 }      
 function imagenius_style() {
 wp_register_style('imaGenius', WP_PLUGIN_URL . '/imagenius/css/imagenius_style.css');
